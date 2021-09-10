@@ -5,9 +5,8 @@ exports.listCat = async () =>{
 try{
     let breed = 1;
     const catList = await Cat.find();
-    // console.log(catList);
-    catList.map(cat => console.log(`\n Cat breed No. ${breed++}\n ${cat.numbers} ${cat.breed} up for adoption, Adoption cost: £${cat.adoptionCost} each`));
-    // console.log("\n End of the list");
+    catList.map(cat => console.log(`\n Cat breed No. ${breed++}\n ${cat.numbers} ${cat.breed} up for adoption, Adoption cost: £${cat.adoptionCost} each.`));
+    console.log("\n End of the list.");
 
 }catch(error){
     console.log(error);
