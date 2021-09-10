@@ -27,7 +27,7 @@ const app = async () =>{
         console.log("Invalid command- see README file for details");
     }
     mongoose.disconnect();
-    console.log("\nTermination connection to the database...");
+    console.log("\nTerminating connection to the database...");
 };
 
 
